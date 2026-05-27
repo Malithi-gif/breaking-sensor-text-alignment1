@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal academic portfolio website for Malithi Mithsara, PhD student in Computer Science at Southern Illinois University." />
+  <title>Malithi Mithsara | PhD Researcher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar">
+      <a class="brand" href="#top" aria-label="Malithi Mithsara home">
+        <span class="brand-mark">MM</span>
+        <span>Malithi Mithsara</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-padding">
+      <div class="hero-content reveal">
+        <p class="eyebrow">PhD Student · Computer Science · SIU Carbondale</p>
+        <h1>Building secure, trustworthy, and human-centered AI for sensor-driven systems.</h1>
+        <p class="hero-text">
+          I am a Computer Science PhD student at Southern Illinois University researching human activity recognition, multimodal AI, LLM/SLM-integrated sensing, and privacy-preserving intelligent systems.
+        </p>
+        <div class="hero-badges">
+          <span>CVPR 2026 Author</span>
+          <span>Wearable AI Security</span>
+          <span>LLMs & SLMs</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn primary" href="#publications">View Publications</a>
+          <a class="btn secondary" href="assets/Malithi_Mithsara_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="photo-card">
+          <img src="assets/profile.jpg" alt="Portrait of Malithi Mithsara" />
+          <div class="floating-card top-card">
+            <strong>Research Focus</strong>
+            <span>Secure multimodal HAR</span>
+          </div>
+          <div class="floating-card bottom-card">
+            <strong>Current</strong>
+            <span>CVPR 2026 · Cross-modal attacks</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section-padding reveal" aria-label="Quick highlights">
+      <div class="stat-card"><span class="counter" data-target="8">0</span><p>Academic roles</p></div>
+      <div class="stat-card"><span class="counter" data-target="9">0</span><p>Publications & papers</p></div>
+      <div class="stat-card"><span class="counter" data-target="4">0</span><p>Major research areas</p></div>
+      <div class="stat-card"><span class="counter" data-target="4">0</span><p>PhD GPA</p></div>
+    </section>
+
+    <section class="section section-padding" id="about">
+      <div class="section-title reveal">
+        <p class="eyebrow">About Me</p>
+        <h2>Researcher, educator, and AI security enthusiast.</h2>
+      </div>
+      <div class="about-grid reveal">
+        <div class="glass-card large-card">
+          <h3>Profile</h3>
+          <p>
+            I am pursuing a PhD in Computer Science at Southern Illinois University with a 4.00/4.00 GPA. My work explores how language models can interpret sensor data while remaining secure, private, and reliable in real-world environments such as healthcare, wearable AI, and smart homes.
+          </p>
+          <p>
+            My current research studies vulnerabilities in LLM/SLM-integrated sensing systems, including data poisoning, adversarial examples, prompt injection, and cross-modal sensor-text misalignment.
+          </p>
+        </div>
+        <div class="glass-card">
+          <h3>Education</h3>
+          <ul class="clean-list">
+            <li><strong>PhD Computer Science</strong><br>Southern Illinois University, USA</li>
+            <li><strong>MSc Computer Science</strong><br>University of Sri Jayewardenepura, Sri Lanka</li>
+            <li><strong>BSc Physical Science</strong><br>University of Sri Jayewardenepura, Sri Lanka</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-padding accent-section" id="research">
+      <div class="section-title reveal">
+        <p class="eyebrow">Research</p>
+        <h2>Secure multimodal intelligence for human activity understanding.</h2>
+      </div>
+      <div class="research-grid reveal">
+        <article class="research-card active" data-topic="har">
+          <span class="icon">⌚</span>
+          <h3>Human Activity Recognition</h3>
+          <p>Interpreting wearable and mobile sensor signals for real-time human behavior analysis.</p>
+        </article>
+        <article class="research-card" data-topic="llm">
+          <span class="icon">🧠</span>
+          <h3>LLMs & SLMs</h3>
+          <p>Using large and small language models for multimodal reasoning, text generation, and intelligent sensing.</p>
+        </article>
+        <article class="research-card" data-topic="security">
+          <span class="icon">🛡️</span>
+          <h3>Security & Privacy</h3>
+          <p>Studying poisoning, adversarial examples, prompt injection, and trustworthy AI defenses.</p>
+        </article>
+        <article class="research-card" data-topic="health">
+          <span class="icon">🏥</span>
+          <h3>Healthcare AI</h3>
+          <p>Designing AI-driven sensing systems for sensitive domains such as healthcare and smart environments.</p>
+        </article>
+      </div>
+      <div class="topic-panel reveal" id="topicPanel">
+        <h3>Human Activity Recognition</h3>
+        <p>My work combines sensor data, natural-language descriptions, and contrastive learning to improve activity understanding while analyzing how these systems fail under attack.</p>
+      </div>
+    </section>
+
+    <section class="section section-padding cvpr-section reveal">
+      <div class="cvpr-card">
+        <div>
+          <p class="eyebrow">Featured CVPR 2026 Work</p>
+          <h2>Breaking Sensor-Text Alignment</h2>
+          <p>
+            This paper studies cross-modal attacks on contrastive multimodal human activity recognition systems, showing how poisoned text-side embeddings can disrupt sensor-text alignment and reduce model reliability.
+          </p>
+          <div class="mini-tags"><span>Contrastive Learning</span><span>Sensor-Text Alignment</span><span>Adversarial AI</span></div>
+        </div>
+        <a class="btn primary" href="#publications">See Paper</a>
+      </div>
+    </section>
+
+    <section class="section section-padding" id="experience">
+      <div class="section-title reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Academic, teaching, and research journey.</h2>
+      </div>
+      <div class="timeline reveal" id="timeline"></div>
+    </section>
+
+    <section class="section section-padding" id="skills">
+      <div class="section-title reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical toolkit.</h2>
+      </div>
+      <div class="skills-grid reveal" id="skillsGrid"></div>
+    </section>
+
+    <section class="section section-padding" id="publications">
+      <div class="section-title reveal">
+        <p class="eyebrow">Publications</p>
+        <h2>Selected papers and scholarly work.</h2>
+      </div>
+      <div class="filter-bar reveal" role="group" aria-label="Publication filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cvpr">CVPR</button>
+        <button class="filter-btn" data-filter="har">HAR / Wearable AI</button>
+        <button class="filter-btn" data-filter="health">Healthcare</button>
+        <button class="filter-btn" data-filter="robotics">Robotics</button>
+      </div>
+      <div class="publication-list reveal" id="publicationList"></div>
+    </section>
+
+    <section class="section section-padding accent-section" id="projects">
+      <div class="section-title reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>Interactive research and development projects.</h2>
+      </div>
+      <div class="project-grid reveal">
+        <article class="project-card">
+          <h3>Automated Fake News Detection</h3>
+          <p>Comparative analysis of machine learning and deep learning models including CNN, LSTM, DistilBERT, FinBERT, RoBERTa, ALBERT, ELECTRA, Gradient Boosting, and Random Forest.</p>
+          <span>Python · Jupyter Notebook · NLP</span>
+        </article>
+        <article class="project-card">
+          <h3>AI-Powered YouTube Surveillance and Crime Detection</h3>
+          <p>Developed Python-based tools using the YouTube API to collect, preprocess, and classify crime-related videos for analysis.</p>
+          <span>Python · YouTube API · Video AI</span>
+        </article>
+        <article class="project-card">
+          <h3>Secure Sensor-Text AI</h3>
+          <p>Research prototype for studying cross-modal attacks and robustness in contrastive human activity recognition.</p>
+          <span>PyTorch · DistilBERT · Sensor Data</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-padding" id="awards">
+      <div class="section-title reveal">
+        <p class="eyebrow">Awards & Leadership</p>
+        <h2>Recognition and service.</h2>
+      </div>
+      <div class="awards-grid reveal">
+        <div class="glass-card"><h3>GPSC Travel and Conference Award</h3><p>Graduate and Professional Student Council, 2024.</p></div>
+        <div class="glass-card"><h3>BSN Travel Award</h3><p>IEEE-EMBS International Conference on Body Sensor Networks, 2024.</p></div>
+        <div class="glass-card"><h3>Secretary</h3><p>Sri Lankan Student Association, SIUC, 2025–Current.</p></div>
+      </div>
+    </section>
+
+    <section class="section section-padding contact-section" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect for research, collaboration, and conference conversations.</h2>
+        <p>I am based in Carbondale, Illinois, and currently pursuing my PhD at Southern Illinois University.</p>
+        <div class="contact-links">
+          <a href="mailto:malithi.mithsara@siu.edu">malithi.mithsara@siu.edu</a>
+          <a href="mailto:malithi.mith@gmail.com">malithi.mith@gmail.com</a>
+          <a href="https://github.com/Malithi-gif" target="_blank" rel="noopener">GitHub: Malithi-gif</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Malithi Mithsara. Built for academic, research, and CVPR networking.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
